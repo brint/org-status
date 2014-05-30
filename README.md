@@ -40,3 +40,6 @@ Then run the dashboard:
 dashing start
 ```
 Navigate to the dashboard in your browser: `http://localhost:3030`
+
+#### Example Dashboard
+![Screenshot](https://raw.githubusercontent.com/brint/org-status/master/docs/screenshot.png)
