@@ -26,7 +26,7 @@ class GithubFeed
   end
 
   def events
-    events = json_get("/users/#{@user}/events/orgs/#{@org}")
+    events = json_get("/orgs/#{@org}/events")
     events.map do |event_json|
       event_type = event_json[:type]
       Object.const_get(event_type).new(event_json) if EVENT_TYPES.include?(event_type)
