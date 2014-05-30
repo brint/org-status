@@ -1,0 +1,17 @@
+<i class="icon icon-github"></i>
+<h1 class="title" data-bind="title"></h1>
+<table class="list-nostyle">
+  <tr class="headers">
+    <th>Repo</th>
+    <th>PR's</th>
+    <th>Issues</th>
+  </tr>
+  <tr data-foreach-item="items">
+    <td class="label" data-bind="item.label"></td>
+    <td class="label" data-bind="item.pull_requests"></td>
+    <td class="label" data-bind="item.open_issues_count"></td>
+  </tr>
+</table>
+
+<p class="more-info" data-bind="moreinfo"></p>
+<p class="updated-at" data-bind="updatedAtMessage"></p>

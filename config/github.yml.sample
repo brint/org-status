@@ -1,0 +1,17 @@
+# Rename to github.yml and sub in your values
+# GitHub server
+server: 'https://github.com'
+
+# GitHub user name
+user: 'github-user'
+
+# Organization to evaluate
+organization: 'github-org'
+
+# Token with 'repo' access to the configured organization
+# https://github.com/blog/1509-personal-api-tokens
+gh_token: 'YOUR GH TOKEN'
+
+# List of repositories in the origanization to ignore when counting issues and
+# PR's
+ignored_repos: ['ignored-repo1', 'ignored-repo2']

@@ -1,0 +1,22 @@
+<!-- Credit https://gist.github.com/kimh/8894101-->
+<div class="header">
+  <h1 class="title" data-bind="title"></h1>
+</div>
+
+<li class="content-area" data-foreach-item="items">
+  <div class="commit-container">
+    <p class="ago" data-bind="item.ago"></p>
+    <div class="avatar">
+      <img data-bind-src="item.avatar_url">
+    </div>
+    <div class="gh-feed-title-message">
+      <i class="gh-feed-title" data-bind="item.title"></i>
+      <div class="gh-feed-message">
+        <pre data-bind="item.message"></pre>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</li>
+<p class="more-info" data-bind="moreinfo"></p>
+<p class="updated-at" data-bind="updatedAtMessage"></p>
